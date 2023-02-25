@@ -66,7 +66,6 @@
                 <fieldset>
                     <legend>Is your cat an indoor or outdoor cat?</legend>
                     <!--The "legend" element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.-->
-                    <input type="radio"> Indoor
                     <label><input checked id="indoor" value="indoor" name="indoor-outdoor" type="radio"> Indoor</label>
                     <!-- The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page. -->
                     <label><input id="outdoor" value="outdoor" name="indoor-outdoor" type="radio"> Outdoor</label>
@@ -76,7 +75,7 @@
                 <fieldset>
                     <legend>What's your cat's personality?</legend>
                     <input checked id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label>
-                    <!-- There's another way to associate an input element's text with the element itself. -->
+                    <!-- There's another way to associate an input element's text with the element itself. "Checked" attribute for using by default -->
                     <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
                     <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
                 </fieldset>
