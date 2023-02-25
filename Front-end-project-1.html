@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CatPhotoApp</title>
+        <meta charset ="UTF-8">
+      </head>
+    <body>
+        <main>
+            <h1>CatPhotoApp</h1>    <!-- Heading -->
+            <section>
+                <h2>Cat Photos</h2>
+                <!-- That's how we comment -->
+                <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+                <!-- Create a link in between "cat photos" -->
+
+                <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+                <!-- "target" attribute to open up a new browser tab -->
+
+                <a href="https://freecatphotoapp.com">link to cat pictures</a>
+                <!-- Create a link in between "link to cat pictures"-->
+
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+                <!-- Image path add & use "alt" to add a caption -->
+
+                <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+                <!-- Turn the image into a link -->
+            </section>
+
+            <section>
+                <h2>Cat Lists</h2>  <!-- 2nd Section Heading -->
+                <h3>Things cats love:</h3>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <!-- "ul" for unordered list showing -->
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <figcaption>Cats love lasagna.</figcaption>
+                    <!-- A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element. -->
+                    <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                    <!-- Emphasize the word "love" in the figcaption element by wrapping it in an emphasis "em" element. -->
+                </figure>
+                <!-- The figure element represents self-contained content and will allow you to associate an image with a caption -->
+                <h3>Top 3 things cats hate:</h3>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <!-- "ol" for ordered list showing -->
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <figcaption>Cats hate other cats.</figcaption>
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                    <!-- The "strong" element is used to indicate that some text is of strong "importance or urgent". -->
+                </figure>
+            </section>
+
+            <section>
+                <h2>Cat Form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!-- The "action" attribute indicates where form data should be sent. It tells the browser that the form data should be sent to the path /submit-url. -->
+                
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <!--The "legend" element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.-->
+                    <input type="radio"> Indoor
+                    <label><input checked id="indoor" value="indoor" name="indoor-outdoor" type="radio"> Indoor</label>
+                    <!-- The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page. -->
+                    <label><input id="outdoor" value="outdoor" name="indoor-outdoor" type="radio"> Outdoor</label>
+                    <!-- "name" attribute is used to select one radio button and automatically deselects the other, both buttons must have a name attribute with the "same value". -->                 
+                </fieldset>
+
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <input checked id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label>
+                    <!-- There's another way to associate an input element's text with the element itself. -->
+                    <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                    <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+                </fieldset>
+                
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                    <!-- Input field as a text type and it's name. "Placeholder" text is used to give people a hint about what kind of information to enter into an input.
+                    "required attribute to make it mandatory"-->
+                <button type="submit">Submit</button>
+                
+            </form>
+            </section>
+            
+        </main>
+            <footer>
+                <p>
+                    No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+                </p>                
+            </footer>
+    </body>
+</html>
